@@ -2,7 +2,6 @@
   "use strict";
 
   var SLIDES_DATA = [
-    // PHẦN I: SLIDES 1 - 4
     {
       id: 1,
       eyebrow: "CHỦ ĐỀ THUYẾT TRÌNH",
@@ -10,13 +9,12 @@
       subtitle: "Hành trình tự lực cánh sinh trên con đường tìm đường cứu nước (1911 – 1941)",
       footerLabel: "Bài học về ý chí, nghị lực và giá trị của sức lao động",
       scenicTheme: "ocean",
-      videoLabel: "VIDEO LOOP: SÓNG BIỂN BÌNH MINH",
-      bgImage: "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=1400&q=80",
+      videoLabel: "TƯ LIỆU LỊCH SỬ",
+      bgImage: "https://upload.wikimedia.org/wikipedia/commons/e/ec/L%C3%A0ng_Sen%2C_Kim_Li%C3%AAn%2C_Nam_%C4%90%C3%A0n%2C_Ngh%E1%BB%87_An.jpg",
       maskStyle: "linear-gradient(90deg, #121316 0%, rgba(18,19,22,0.86) 50%, rgba(18,19,22,0.2) 100%)",
       morph: {
-        bar: { left: "3.2%", top: "14%", width: "10px", height: "72%", opacity: 1, radius: "6px" },
-        line: { left: "6%", top: "88%", width: "88%", height: "3px", rotate: "0deg", opacity: 0.7 },
-        pin: { left: "82%", top: "88%", label: "1911 • Khởi hành" }
+        line: { left: "6%", top: "88%", width: "4%", height: "3px", rotate: "0deg", opacity: 0.7 },
+        pin: { left: "10%", top: "88%", label: "1911 • Khởi hành" }
       }
     },
     {
@@ -32,9 +30,8 @@
       bgImage: "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1400&q=80",
       maskStyle: "linear-gradient(90deg, #121316 0%, rgba(18,19,22,0.9) 52%, rgba(18,19,22,0.25) 100%)",
       morph: {
-        bar: { left: "6.5%", top: "28%", width: "260px", height: "6px", opacity: 1, radius: "4px" },
-        line: { left: "6.5%", top: "90%", width: "45%", height: "3px", rotate: "0deg", opacity: 0.5 },
-        pin: { left: "51.5%", top: "90%", label: "Việt Nam • Đầu TK XX" }
+        line: { left: "6%", top: "88%", width: "8%", height: "3px", rotate: "0deg", opacity: 0.7 },
+        pin: { left: "14%", top: "88%", label: "Việt Nam • Đầu TK XX" }
       }
     },
     {
@@ -47,13 +44,12 @@
         { bold: "Hành trang:", text: "Lòng yêu nước nồng nàn và ý chí lao động bền bỉ." }
       ],
       scenicTheme: "ocean",
-      videoLabel: "CINEMAGRAPH: BẾN CẢNG NHÀ RỒNG",
-      bgImage: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1400&q=80",
+      videoLabel: "TÀU LATOUCHE-TRÉVILLE",
+      bgImage: "https://cdn10.picryl.com/photo/1918/06/07/photograph-of-the-ss-amiral-latouche-treville-496e57-1024.jpg",
       maskStyle: "linear-gradient(90deg, #121316 0%, rgba(18,19,22,0.85) 55%, rgba(18,19,22,0.2) 100%)",
       morph: {
-        bar: { left: "4.2%", top: "16%", width: "8px", height: "68%", opacity: 1, radius: "4px" },
-        line: { left: "6.5%", top: "90%", width: "80%", height: "4px", rotate: "0deg", opacity: 0.9 },
-        pin: { left: "30%", top: "90%", label: "Bến Nhà Rồng • 05/06/1911" }
+        line: { left: "6%", top: "88%", width: "12%", height: "4px", rotate: "0deg", opacity: 0.8 },
+        pin: { left: "18%", top: "88%", label: "Bến Nhà Rồng • 1911" }
       }
     },
     {
@@ -69,13 +65,10 @@
       bgImage: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80",
       maskStyle: "radial-gradient(circle at 75% 50%, rgba(18,19,22,0.25) 0%, #121316 72%)",
       morph: {
-        bar: { left: "6.5%", top: "10%", width: "87%", height: "6px", opacity: 0.9, radius: "8px" },
-        line: { left: "6.5%", top: "90%", width: "87%", height: "4px", rotate: "0deg", opacity: 0.9 },
-        pin: { left: "50%", top: "90%", label: "Đôi bàn tay tự lực" }
+        line: { left: "6%", top: "88%", width: "16%", height: "4px", rotate: "0deg", opacity: 0.8 },
+        pin: { left: "22%", top: "88%", label: "Tự lực" }
       }
     },
-
-    // PHẦN II: SLIDES 5 - 11
     {
       id: 5,
       eyebrow: "CÔNG VIỆC ĐẦU TIÊN TRÊN BIỂN",
@@ -89,9 +82,8 @@
       bgImage: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=80",
       maskStyle: "linear-gradient(90deg, #121316 0%, rgba(18,19,22,0.9) 55%, rgba(217,4,41,0.28) 100%)",
       morph: {
-        bar: { left: "3.5%", top: "30%", width: "12px", height: "48%", opacity: 1, radius: "6px" },
-        line: { left: "6.5%", top: "90%", width: "65%", height: "3px", rotate: "0deg", opacity: 0.7 },
-        pin: { left: "38%", top: "90%", label: "Tàu Latouche-Tréville" }
+        line: { left: "6%", top: "88%", width: "20%", height: "3px", rotate: "0deg", opacity: 0.8 },
+        pin: { left: "26%", top: "88%", label: "Phụ bếp tàu" }
       }
     },
     {
@@ -107,9 +99,8 @@
       bgImage: "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=1400&q=80",
       maskStyle: "linear-gradient(90deg, #121316 0%, rgba(18,19,22,0.9) 54%, rgba(18,19,22,0.2) 100%)",
       morph: {
-        bar: { left: "6.5%", top: "26%", width: "180px", height: "5px", opacity: 1, radius: "4px" },
-        line: { left: "6.5%", top: "90%", width: "75%", height: "3px", rotate: "0deg", opacity: 0.7 },
-        pin: { left: "48%", top: "90%", label: "Tự học ban đêm" }
+        line: { left: "6%", top: "88%", width: "24%", height: "3px", rotate: "0deg", opacity: 0.8 },
+        pin: { left: "30%", top: "88%", label: "Tự học" }
       }
     },
     {
@@ -126,9 +117,8 @@
       bgImage: "https://images.unsplash.com/photo-1485738422979-f5c462d49f74?auto=format&fit=crop&w=1400&q=80",
       maskStyle: "linear-gradient(180deg, rgba(18,19,22,0.92) 0%, rgba(18,19,22,0.75) 60%, #121316 100%)",
       morph: {
-        bar: { left: "6.5%", top: "24%", width: "220px", height: "5px", opacity: 1, radius: "4px" },
-        line: { left: "6.5%", top: "89%", width: "87%", height: "4px", rotate: "0deg", opacity: 1 },
-        pin: { left: "62%", top: "89%", label: "New York & Boston (1912–1913)" }
+        line: { left: "6%", top: "88%", width: "28%", height: "4px", rotate: "0deg", opacity: 0.85 },
+        pin: { left: "34%", top: "88%", label: "Mỹ & Châu Phi" }
       }
     },
     {
@@ -141,13 +131,12 @@
         { bold: "Kiên trì vượt khó:", text: "Dù vất vả vẫn dành tiền mua sách và học tiếng Anh mỗi ngày." }
       ],
       scenicTheme: "snow",
-      videoLabel: "VIDEO LOOP: TUYẾT RƠI MÙA ĐÔNG LUÂN ĐÔN",
+      videoLabel: "LUÂN ĐÔN MÙA ĐÔNG",
       bgImage: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1400&q=80",
       maskStyle: "linear-gradient(90deg, #121316 0%, rgba(18,19,22,0.86) 52%, rgba(18,19,22,0.2) 100%)",
       morph: {
-        bar: { left: "2.8%", top: "12%", width: "14px", height: "76%", opacity: 1, radius: "6px" },
-        line: { left: "6.5%", top: "90%", width: "82%", height: "3px", rotate: "0deg", opacity: 0.8 },
-        pin: { left: "70%", top: "90%", label: "Luân Đôn (1913–1917)" }
+        line: { left: "6%", top: "88%", width: "32%", height: "3px", rotate: "0deg", opacity: 0.85 },
+        pin: { left: "38%", top: "88%", label: "Luân Đôn (1913)" }
       }
     },
     {
@@ -163,9 +152,8 @@
       bgImage: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1400&q=80",
       maskStyle: "linear-gradient(180deg, rgba(18,19,22,0.92) 0%, rgba(18,19,22,0.78) 100%)",
       morph: {
-        bar: { left: "6.5%", top: "26%", width: "320px", height: "5px", opacity: 1, radius: "4px" },
-        line: { left: "6.5%", top: "90%", width: "82%", height: "3px", rotate: "0deg", opacity: 0.6 },
-        pin: { left: "73%", top: "90%", label: "Khách sạn Carlton • Anh" }
+        line: { left: "6%", top: "88%", width: "36%", height: "3px", rotate: "0deg", opacity: 0.9 },
+        pin: { left: "42%", top: "88%", label: "Khách sạn Carlton" }
       }
     },
     {
@@ -182,9 +170,8 @@
       bgImage: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=1400&q=80",
       maskStyle: "linear-gradient(90deg, #121316 0%, rgba(18,19,22,0.85) 60%, rgba(18,19,22,0.3) 100%)",
       morph: {
-        bar: { left: "6.5%", top: "25%", width: "240px", height: "5px", opacity: 1, radius: "4px" },
-        line: { left: "93%", top: "18%", width: "60%", height: "4px", rotate: "90deg", opacity: 0.75 },
-        pin: { left: "93%", top: "48%", label: "Hyde Park • Luân Đôn" }
+        line: { left: "6%", top: "88%", width: "40%", height: "4px", rotate: "0deg", opacity: 0.9 },
+        pin: { left: "46%", top: "88%", label: "Hyde Park" }
       }
     },
     {
@@ -200,13 +187,10 @@
       bgImage: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1400&q=80",
       maskStyle: "linear-gradient(90deg, #121316 0%, rgba(18,19,22,0.9) 55%, rgba(18,19,22,0.22) 100%)",
       morph: {
-        bar: { left: "95.5%", top: "12%", width: "10px", height: "76%", opacity: 1, radius: "6px" },
-        line: { left: "6.5%", top: "90%", width: "85%", height: "3px", rotate: "0deg", opacity: 0.85 },
-        pin: { left: "78%", top: "90%", label: "Ngõ Compoint • Paris" }
+        line: { left: "6%", top: "88%", width: "44%", height: "3px", rotate: "0deg", opacity: 0.9 },
+        pin: { left: "50%", top: "88%", label: "Ngõ Compoint" }
       }
     },
-
-    // PHẦN III: SLIDES 12 - 16
     {
       id: 12,
       eyebrow: "BƯỚC NGOẶT LAO ĐỘNG TRÍ ÓC",
@@ -221,9 +205,8 @@
       bgImage: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1400&q=80",
       maskStyle: "linear-gradient(180deg, rgba(18,19,22,0.92) 0%, rgba(18,19,22,0.8) 100%)",
       morph: {
-        bar: { left: "6.5%", top: "25%", width: "280px", height: "5px", opacity: 1, radius: "4px" },
-        line: { left: "6.5%", top: "55%", width: "87%", height: "4px", rotate: "0deg", opacity: 0.5 },
-        pin: { left: "82%", top: "89%", label: "Báo Le Paria • Paris" }
+        line: { left: "6%", top: "88%", width: "48%", height: "4px", rotate: "0deg", opacity: 0.95 },
+        pin: { left: "54%", top: "88%", label: "Báo Le Paria" }
       }
     },
     {
@@ -240,9 +223,8 @@
       bgImage: "https://images.unsplash.com/photo-1513326738677-b964603b136d?auto=format&fit=crop&w=1400&q=80",
       maskStyle: "linear-gradient(135deg, #121316 0%, rgba(18,19,22,0.85) 65%, rgba(18,19,22,0.3) 100%)",
       morph: {
-        bar: { left: "6.5%", top: "24%", width: "260px", height: "5px", opacity: 1, radius: "4px" },
-        line: { left: "6.5%", top: "90%", width: "88%", height: "4px", rotate: "-4deg", opacity: 0.85 },
-        pin: { left: "84%", top: "86%", label: "Liên Xô • Trung Quốc • Thái Lan" }
+        line: { left: "6%", top: "88%", width: "52%", height: "4px", rotate: "0deg", opacity: 0.95 },
+        pin: { left: "58%", top: "88%", label: "Quốc tế" }
       }
     },
     {
@@ -255,13 +237,12 @@
         { bold: "Tinh thần lạc quan:", text: "Biến bàn đá chông chênh bên suối thành nơi làm việc lịch sử." }
       ],
       scenicTheme: "stream",
-      videoLabel: "VIDEO LOOP: SUỐI LÊ-NIN & RỪNG PÁC BÓ",
+      videoLabel: "PÁC BÓ - CAO BẰNG",
       bgImage: "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1400&q=80",
       maskStyle: "linear-gradient(90deg, #121316 0%, rgba(18,19,22,0.86) 52%, rgba(18,19,22,0.18) 100%)",
       morph: {
-        bar: { left: "3.2%", top: "15%", width: "10px", height: "70%", opacity: 1, radius: "6px" },
-        line: { left: "6.5%", top: "90%", width: "88%", height: "3px", rotate: "0deg", opacity: 0.9 },
-        pin: { left: "86%", top: "90%", label: "Pác Bó • Cao Bằng (1941)" }
+        line: { left: "6%", top: "88%", width: "56%", height: "3px", rotate: "0deg", opacity: 0.95 },
+        pin: { left: "62%", top: "88%", label: "Pác Bó (1941)" }
       }
     },
     {
@@ -279,9 +260,8 @@
       bgImage: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=80",
       maskStyle: "linear-gradient(180deg, rgba(18,19,22,0.9) 0%, rgba(18,19,22,0.82) 100%)",
       morph: {
-        bar: { left: "6.5%", top: "23%", width: "220px", height: "5px", opacity: 1, radius: "4px" },
-        line: { left: "6.5%", top: "92%", width: "87%", height: "3px", rotate: "0deg", opacity: 0.6 },
-        pin: { left: "88%", top: "92%", label: "Chiến khu Việt Bắc" }
+        line: { left: "6%", top: "88%", width: "60%", height: "3px", rotate: "0deg", opacity: 0.95 },
+        pin: { left: "66%", top: "88%", label: "Việt Bắc" }
       }
     },
     {
@@ -298,13 +278,10 @@
       bgImage: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1400&q=80",
       maskStyle: "radial-gradient(circle at center, rgba(18,19,22,0.82) 0%, #121316 90%)",
       morph: {
-        bar: { left: "6.5%", top: "24%", width: "300px", height: "6px", opacity: 1, radius: "4px" },
-        line: { left: "6.5%", top: "88%", width: "87%", height: "5px", rotate: "0deg", opacity: 1 },
-        pin: { left: "50%", top: "88%", label: "30 Năm • 28+ Quốc gia • 12+ Nghề" }
+        line: { left: "6%", top: "88%", width: "64%", height: "5px", rotate: "0deg", opacity: 1 },
+        pin: { left: "70%", top: "88%", label: "Tổng kết số liệu" }
       }
     },
-
-    // PHẦN IV: SLIDES 17 - 20
     {
       id: 17,
       layout: "split4060",
@@ -319,9 +296,8 @@
       bgImage: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1400&q=80",
       maskStyle: "linear-gradient(90deg, rgba(18,19,22,0.2) 0%, rgba(18,19,22,0.88) 42%, #121316 100%)",
       morph: {
-        bar: { left: "0%", top: "0%", width: "38%", height: "100%", opacity: 0.92, radius: "0px" },
-        line: { left: "42%", top: "90%", width: "52%", height: "3px", rotate: "0deg", opacity: 0.7 },
-        pin: { left: "38%", top: "50%", label: "Cần • Kiệm • Nêu Gương" }
+        line: { left: "6%", top: "88%", width: "68%", height: "3px", rotate: "0deg", opacity: 0.95 },
+        pin: { left: "74%", top: "88%", label: "Cần • Kiệm" }
       }
     },
     {
@@ -338,9 +314,8 @@
       bgImage: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1400&q=80",
       maskStyle: "linear-gradient(180deg, rgba(18,19,22,0.92) 0%, rgba(18,19,22,0.8) 100%)",
       morph: {
-        bar: { left: "6.5%", top: "24%", width: "260px", height: "5px", opacity: 1, radius: "4px" },
-        line: { left: "6.5%", top: "90%", width: "87%", height: "3px", rotate: "0deg", opacity: 0.8 },
-        pin: { left: "50%", top: "90%", label: "Thanh niên & Học sinh" }
+        line: { left: "6%", top: "88%", width: "72%", height: "3px", rotate: "0deg", opacity: 0.98 },
+        pin: { left: "78%", top: "88%", label: "Thế hệ trẻ" }
       }
     },
     {
@@ -358,9 +333,8 @@
       bgImage: "https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=1400&q=80",
       maskStyle: "linear-gradient(180deg, rgba(18,19,22,0.9) 0%, rgba(18,19,22,0.84) 100%)",
       morph: {
-        bar: { left: "49.8%", top: "32%", width: "3px", height: "54%", opacity: 0.65, radius: "2px" },
-        line: { left: "6.5%", top: "59%", width: "87%", height: "3px", rotate: "0deg", opacity: 0.65 },
-        pin: { left: "50%", top: "59%", label: "4 Hành động mỗi ngày" }
+        line: { left: "6%", top: "88%", width: "76%", height: "3px", rotate: "0deg", opacity: 0.98 },
+        pin: { left: "82%", top: "88%", label: "Hành động" }
       }
     },
     {
@@ -370,13 +344,12 @@
       subtitle: "Lao động cần cù, tự lực cánh sinh và học tập không ngừng chính là chìa khóa mở ra tương lai.",
       footerLabel: "Rất mong nhận được câu hỏi và ý kiến đóng góp từ Cô và tập thể lớp!",
       scenicTheme: "sunrise",
-      videoLabel: "VIDEO LOOP: BÌNH MINH TRÊN NON SÔNG VIỆT NAM",
+      videoLabel: "BÌNH MINH NON SÔNG VIỆT NAM",
       bgImage: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1400&q=80",
       maskStyle: "radial-gradient(circle at center, rgba(18,19,22,0.55) 0%, #121316 88%)",
       morph: {
-        bar: { left: "6.5%", top: "18%", width: "160px", height: "6px", opacity: 1, radius: "4px" },
-        line: { left: "6.5%", top: "86%", width: "87%", height: "4px", rotate: "0deg", opacity: 0.9 },
-        pin: { left: "50%", top: "86%", label: "Cảm ơn & Thảo luận (Q&A)" }
+        line: { left: "6%", top: "88%", width: "82%", height: "4px", rotate: "0deg", opacity: 1 },
+        pin: { left: "88%", top: "88%", label: "Hoàn thành" }
       }
     }
   ];
@@ -397,14 +370,12 @@
   var slideBgImage = document.getElementById("slideBgImage");
   var scenicGradientMask = document.getElementById("scenicGradientMask");
 
-  var morphAccentBar = document.getElementById("MorphRedAccentBar");
   var morphTimelineLine = document.getElementById("MorphRedTimelineLine");
   var morphFocusPin = document.getElementById("MorphRedFocusPin");
   var pinLabel = document.getElementById("pinLabel");
   var canvas = document.getElementById("videoEffectCanvas");
   var ctx = canvas.getContext("2d");
 
-  // Hiển thị màn hình báo kết thúc bài thuyết trình (khi bấm Tiếp ở Slide 20)
   function showEndOfPresentation() {
     isEndOfShow = true;
     endShowOverlay.classList.remove("hidden");
@@ -420,12 +391,7 @@
   }
 
   function renderSlide(index) {
-    // Chặn lùi quá Slide 01
-    if (index < 0) {
-      return;
-    }
-
-    // Nếu vượt quá Slide 20 -> Không lặp lại Slide 01 mà hiện màn hình Báo kết thúc
+    if (index < 0) return;
     if (index >= SLIDES_DATA.length) {
       showEndOfPresentation();
       return;
@@ -439,19 +405,11 @@
     slideCounter.textContent = counterText;
     fsSlideIndicator.textContent = counterText;
 
-    // Khóa nút Trước khi đang ở Slide 01
     prevBtn.disabled = (currentSlideIndex === 0);
 
     slideBgImage.style.backgroundImage = "url('" + slide.bgImage + "')";
     scenicGradientMask.style.background = slide.maskStyle;
     activeScenicTheme = slide.scenicTheme || "ocean";
-
-    morphAccentBar.style.left = slide.morph.bar.left;
-    morphAccentBar.style.top = slide.morph.bar.top;
-    morphAccentBar.style.width = slide.morph.bar.width;
-    morphAccentBar.style.height = slide.morph.bar.height;
-    morphAccentBar.style.opacity = slide.morph.bar.opacity;
-    morphAccentBar.style.borderRadius = slide.morph.bar.radius;
 
     morphTimelineLine.style.left = slide.morph.line.left;
     morphTimelineLine.style.top = slide.morph.line.top;
@@ -556,14 +514,12 @@
 
   function goPrev() {
     if (isEndOfShow) {
-      // Đang ở màn hình Kết thúc bấm Lùi sẽ quay lại Slide 20
       renderSlide(SLIDES_DATA.length - 1);
       return;
     }
     renderSlide(currentSlideIndex - 1);
   }
 
-  // CHỨC NĂNG BẮT ĐẦU TRÌNH CHIẾU: CHỈ PHÓNG TOÀN MÀN HÌNH KHUNG SLIDE (#presentationStage)
   function startSlideShowFullscreen() {
     if (!document.fullscreenElement && !document.webkitFullscreenElement) {
       if (presentationStage.requestFullscreen) {
@@ -586,7 +542,6 @@
     }
   }
 
-  // Hiệu ứng Video/Canvas
   var particles = [];
   for (var pIdx = 0; pIdx < 70; pIdx++) {
     particles.push({
@@ -672,12 +627,10 @@
     }
   }
 
-  // Sự kiện nút bấm trên thanh công cụ
   prevBtn.addEventListener("click", goPrev);
   nextBtn.addEventListener("click", goNext);
   document.getElementById("fullscreenBtn").addEventListener("click", startSlideShowFullscreen);
 
-  // Sự kiện cụm nút điều khiển mờ khi đang trình chiếu toàn màn hình
   document.getElementById("fsPrevBtn").addEventListener("click", function (e) {
     e.stopPropagation();
     goPrev();
@@ -691,7 +644,6 @@
     exitSlideShowFullscreen();
   });
 
-  // Sự kiện các nút trên màn hình Kết thúc bài thuyết trình
   document.getElementById("backToSlide20Btn").addEventListener("click", function (e) {
     e.stopPropagation();
     renderSlide(SLIDES_DATA.length - 1);
@@ -706,7 +658,6 @@
     exitSlideShowFullscreen();
   });
 
-  // Khi đang ở chế độ Trình chiếu toàn màn hình, nhấp chuột trái vào slide sẽ tự tiến tới slide tiếp theo (giống PowerPoint)
   presentationStage.addEventListener("click", function (e) {
     if (document.fullscreenElement === presentationStage || document.webkitFullscreenElement === presentationStage) {
       if (!isEndOfShow && !e.target.closest(".ppt-laser-controls") && !e.target.closest(".end-show-box")) {
@@ -715,7 +666,6 @@
     }
   });
 
-  // Điều khiển bằng bàn phím
   window.addEventListener("keydown", function (e) {
     if (e.key === "ArrowRight" || e.key === " " || e.key === "PageDown") {
       e.preventDefault();
@@ -729,7 +679,6 @@
     }
   });
 
-  // Xuất file PowerPoint (.pptx)
   document.getElementById("exportPptxBtn").addEventListener("click", function () {
     if (typeof PptxGenJS === "undefined") {
       alert("Không thể tải thư viện PptxGenJS khi mất kết nối mạng.");
@@ -741,15 +690,6 @@
     SLIDES_DATA.forEach(function (s) {
       var slide = pptx.addSlide();
       slide.background = { color: "121316" };
-
-      slide.addShape(pptx.ShapeType.rect, {
-        x: s.layout === "split4060" ? 0 : 0.4,
-        y: s.layout === "split4060" ? 0 : 0.6,
-        w: s.layout === "split4060" ? 3.8 : 0.12,
-        h: s.layout === "split4060" ? 5.625 : 4.2,
-        fill: { color: "D90429" },
-        objectName: "!!RedAccentBar"
-      });
 
       slide.addText(s.eyebrow, {
         x: 0.75, y: 0.55, w: 8.5, h: 0.35,

@@ -13,11 +13,11 @@
   <!-- Thư viện xuất file PowerPoint (.pptx) -->
   <script src="https://cdn.jsdelivr.net/npm/pptxgenjs@3.12.0/dist/pptxgen.bundle.js"></script>
 
-  <!-- File CSS riêng -->
+  <!-- File CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Thanh công cụ trên cùng (Sẽ tự ẩn hoàn toàn khi bấm Bắt đầu trình chiếu) -->
+  <!-- Thanh công cụ trên cùng -->
   <header class="app-toolbar">
     <div class="brand">
       <span class="brand-dot"></span>
@@ -31,7 +31,6 @@
 
       <div class="divider"></div>
 
-      <!-- Nút Bắt đầu trình chiếu chỉ phóng to khung Slide giống PowerPoint -->
       <button id="fullscreenBtn" class="btn btn-slideshow" type="button" title="Trình chiếu toàn màn hình khung Slide (Phím F)">
         ▶ Bắt đầu trình chiếu
       </button>
@@ -41,24 +40,21 @@
     </div>
   </header>
 
-  <!-- Khung trình chiếu 16:9 (Phần tử này sẽ được phóng toàn màn hình độc lập) -->
+  <!-- Khung trình chiếu 16:9 -->
   <main class="stage-wrapper">
     <div id="presentationStage" class="slide-stage">
       
-      <!-- 1. Phần tử Morph: !!MediaFrame (Phong cảnh & Video hòa vào nền) -->
+      <!-- 1. Phần tử Morph: !!MediaFrame -->
       <div id="MorphMediaFrame" class="morph-media-frame" data-morph-name="!!MediaFrame">
         <div id="slideBgImage" class="slide-bg-image"></div>
         <canvas id="videoEffectCanvas" class="video-effect-canvas"></canvas>
         <div id="scenicGradientMask" class="scenic-gradient-mask"></div>
       </div>
 
-      <!-- 2. Phần tử Morph: !!RedTimelineLine (Đường trục hành trình màu đỏ) -->
+      <!-- 2. Phần tử Morph: !!RedTimelineLine -->
       <div id="MorphRedTimelineLine" class="morph-timeline-line" data-morph-name="!!RedTimelineLine"></div>
 
-      <!-- 3. Phần tử Morph: !!RedAccentBar (Thanh điểm nhấn màu đỏ chủ đạo) -->
-      <div id="MorphRedAccentBar" class="morph-accent-bar" data-morph-name="!!RedAccentBar"></div>
-
-      <!-- 4. Phần tử Morph: !!RedFocusPin (Điểm mốc tọa độ màu đỏ phát sáng) -->
+      <!-- 3. Phần tử Morph: !!RedFocusPin -->
       <div id="MorphRedFocusPin" class="morph-focus-pin" data-morph-name="!!RedFocusPin">
         <span class="pin-core"></span>
         <span class="pin-pulse"></span>
@@ -68,7 +64,7 @@
       <!-- Lớp nội dung chữ Tiếng Việt -->
       <section id="slideContentLayer" class="slide-content-layer"></section>
 
-      <!-- Cụm điều khiển nổi góc dưới trái khi đang ở chế độ Trình chiếu (Giống PowerPoint) -->
+      <!-- Cụm điều khiển nổi góc dưới trái khi trình chiếu -->
       <div class="ppt-laser-controls">
         <button id="fsPrevBtn" type="button" title="Slide trước">&#10094;</button>
         <span id="fsSlideIndicator">01 / 20</span>
@@ -76,13 +72,13 @@
         <button id="fsExitBtn" type="button" title="Thoát trình chiếu (ESC)">✕ Thoát</button>
       </div>
 
-      <!-- Nhãn trạng thái Morph góc dưới phải -->
+      <!-- Nhãn trạng thái Morph -->
       <div class="morph-hud">
         <span class="hud-tag">Transition: <strong>Morph (1.25s)</strong></span>
-        <span class="hud-tag">Anchors: <code>!!RedAccentBar</code> • <code>!!RedTimelineLine</code> • <code>!!RedFocusPin</code> • <code>!!MediaFrame</code></span>
+        <span class="hud-tag">Theme: <strong>Cuộc đời & Sự nghiệp Bác Hồ</strong></span>
       </div>
 
-      <!-- MÀN HÌNH KẾT THÚC BÀI THUYẾT TRÌNH (Hiện ra khi bấm Tiếp ở Slide 20) -->
+      <!-- Màn hình báo kết thúc -->
       <div id="endShowOverlay" class="end-show-overlay hidden">
         <div class="end-show-box">
           <div class="end-badge">ĐÃ HOÀN THÀNH 20 / 20 SLIDE</div>
@@ -102,7 +98,7 @@
     </div>
   </main>
 
-  <!-- Thanh chọn nhanh 20 Slide bên dưới -->
+  <!-- Thanh chọn nhanh 20 Slide -->
   <footer class="thumbnail-strip" id="thumbnailStrip"></footer>
 
   <!-- Hộp thoại lấy mã VBA -->
@@ -125,7 +121,7 @@
     </div>
   </div>
 
-  <!-- File JavaScript riêng -->
+  <!-- File JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
