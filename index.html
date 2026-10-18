@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tấm Gương Lao Động Cần Cù Của Bác Hồ - 20 Slides Morph Presentation</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Thư viện xuất file PowerPoint (.pptx) -->
+  <script src="https://cdn.jsdelivr.net/npm/pptxgenjs@3.12.0/dist/pptxgen.bundle.js"></script>
+
+  <!-- File CSS riêng -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Thanh công cụ trên cùng (Sẽ tự ẩn hoàn toàn khi bấm Bắt đầu trình chiếu) -->
+  <header class="app-toolbar">
+    <div class="brand">
+      <span class="brand-dot"></span>
+      <span class="brand-title">BÀI THUYẾT TRÌNH GDCD • 20 SLIDES (MORPH READY)</span>
+    </div>
+
+    <div class="toolbar-controls">
+      <button id="prevBtn" class="btn btn-outline" type="button">&#8592; Trước</button>
+      <span id="slideCounter" class="slide-counter">01 / 20</span>
+      <button id="nextBtn" class="btn btn-outline" type="button">Tiếp &#8594;</button>
+
+      <div class="divider"></div>
+
+      <!-- Nút Bắt đầu trình chiếu chỉ phóng to khung Slide giống PowerPoint -->
+      <button id="fullscreenBtn" class="btn btn-slideshow" type="button" title="Trình chiếu toàn màn hình khung Slide (Phím F)">
+        ▶ Bắt đầu trình chiếu
+      </button>
+
+      <button id="vbaBtn" class="btn btn-secondary" type="button">⚡ Mã VBA Morph (!!)</button>
+      <button id="exportPptxBtn" class="btn btn-primary" type="button">⬇ Tải file .PPTX</button>
+    </div>
+  </header>
+
+  <!-- Khung trình chiếu 16:9 (Phần tử này sẽ được phóng toàn màn hình độc lập) -->
+  <main class="stage-wrapper">
+    <div id="presentationStage" class="slide-stage">
+      
+      <!-- 1. Phần tử Morph: !!MediaFrame (Phong cảnh & Video hòa vào nền) -->
+      <div id="MorphMediaFrame" class="morph-media-frame" data-morph-name="!!MediaFrame">
+        <div id="slideBgImage" class="slide-bg-image"></div>
+        <canvas id="videoEffectCanvas" class="video-effect-canvas"></canvas>
+        <div id="scenicGradientMask" class="scenic-gradient-mask"></div>
+      </div>
+
+      <!-- 2. Phần tử Morph: !!RedTimelineLine (Đường trục hành trình màu đỏ) -->
+      <div id="MorphRedTimelineLine" class="morph-timeline-line" data-morph-name="!!RedTimelineLine"></div>
+
+      <!-- 3. Phần tử Morph: !!RedAccentBar (Thanh điểm nhấn màu đỏ chủ đạo) -->
+      <div id="MorphRedAccentBar" class="morph-accent-bar" data-morph-name="!!RedAccentBar"></div>
+
+      <!-- 4. Phần tử Morph: !!RedFocusPin (Điểm mốc tọa độ màu đỏ phát sáng) -->
+      <div id="MorphRedFocusPin" class="morph-focus-pin" data-morph-name="!!RedFocusPin">
+        <span class="pin-core"></span>
+        <span class="pin-pulse"></span>
+        <span id="pinLabel" class="pin-label">1911 • Khởi hành</span>
+      </div>
+
+      <!-- Lớp nội dung chữ Tiếng Việt -->
+      <section id="slideContentLayer" class="slide-content-layer"></section>
+
+      <!-- Cụm điều khiển nổi góc dưới trái khi đang ở chế độ Trình chiếu (Giống PowerPoint) -->
+      <div class="ppt-laser-controls">
+        <button id="fsPrevBtn" type="button" title="Slide trước">&#10094;</button>
+        <span id="fsSlideIndicator">01 / 20</span>
+        <button id="fsNextBtn" type="button" title="Slide tiếp">&#10095;</button>
+        <button id="fsExitBtn" type="button" title="Thoát trình chiếu (ESC)">✕ Thoát</button>
+      </div>
+
+      <!-- Nhãn trạng thái Morph góc dưới phải -->
+      <div class="morph-hud">
+        <span class="hud-tag">Transition: <strong>Morph (1.25s)</strong></span>
+        <span class="hud-tag">Anchors: <code>!!RedAccentBar</code> • <code>!!RedTimelineLine</code> • <code>!!RedFocusPin</code> • <code>!!MediaFrame</code></span>
+      </div>
+
+      <!-- MÀN HÌNH KẾT THÚC BÀI THUYẾT TRÌNH (Hiện ra khi bấm Tiếp ở Slide 20) -->
+      <div id="endShowOverlay" class="end-show-overlay hidden">
+        <div class="end-show-box">
+          <div class="end-badge">ĐÃ HOÀN THÀNH 20 / 20 SLIDE</div>
+          <h2 class="end-title">KẾT THÚC BÀI THUYẾT TRÌNH</h2>
+          <p class="end-desc">
+            Cảm ơn Cô và các bạn đã theo dõi hành trình lao động cần cù tìm đường cứu nước của Chủ tịch Hồ Chí Minh.
+          </p>
+          <div class="end-actions">
+            <button id="backToSlide20Btn" class="btn btn-outline" type="button">&#8592; Quay lại Slide 20</button>
+            <button id="restartShowBtn" class="btn btn-primary" type="button">↺ Xem lại từ Slide 01</button>
+            <button id="exitEndShowBtn" class="btn btn-secondary" type="button">✕ Thoát toàn màn hình</button>
+          </div>
+          <span class="end-hint">Mẹo: Nhấn phím <kbd>←</kbd> để quay lại Slide 20 hoặc <kbd>ESC</kbd> để thoát toàn màn hình</span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Thanh chọn nhanh 20 Slide bên dưới -->
+  <footer class="thumbnail-strip" id="thumbnailStrip"></footer>
+
+  <!-- Hộp thoại lấy mã VBA -->
+  <div id="vbaModal" class="modal-backdrop hidden">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>Mã VBA PowerPoint Tự Động Tạo 20 Slide & Kích Hoạt Morph (<code>!!</code>)</h3>
+        <button id="closeModalBtn" class="btn-close" type="button">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-steps">
+          1. Mở PowerPoint &rarr; Nhấn <kbd>Alt + F11</kbd> để mở cửa sổ VBA.<br/>
+          2. Chọn <strong>Insert &rarr; Module</strong>, dán mã bên dưới vào và nhấn <kbd>F5</kbd>.
+        </p>
+        <textarea id="vbaCodeArea" readonly></textarea>
+      </div>
+      <div class="modal-footer">
+        <button id="copyVbaBtn" class="btn btn-primary" type="button">📋 Sao chép mã VBA</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- File JavaScript riêng -->
+  <script src="script.js"></script>
+</body>
+</html>
