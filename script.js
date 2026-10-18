@@ -10,8 +10,8 @@
       footerLabel: "Bài học về ý chí, nghị lực và giá trị của sức lao động",
       scenicTheme: "ocean",
       videoLabel: "TƯ LIỆU LỊCH SỬ",
-      bgImage: "https://upload.wikimedia.org/wikipedia/commons/e/ec/L%C3%A0ng_Sen%2C_Kim_Li%C3%AAn%2C_Nam_%C4%90%C3%A0n%2C_Ngh%E1%BB%87_An.jpg",
-      maskStyle: "linear-gradient(90deg, #121316 0%, rgba(18,19,22,0.86) 50%, rgba(18,19,22,0.2) 100%)",
+      bgImage: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80",
+      maskStyle: "linear-gradient(90deg, #121316 0%, rgba(18,19,22,0.75) 55%, rgba(18,19,22,0.2) 100%)",
       morph: {
         line: { left: "6%", top: "88%", width: "4%", height: "3px", rotate: "0deg", opacity: 0.7 },
         pin: { left: "10%", top: "88%", label: "1911 • Khởi hành" }
@@ -407,6 +407,7 @@
 
     prevBtn.disabled = (currentSlideIndex === 0);
 
+    // Đảm bảo cập nhật chính xác ảnh nền cho từng slide (kể cả slide 1)
     slideBgImage.style.backgroundImage = "url('" + slide.bgImage + "')";
     scenicGradientMask.style.background = slide.maskStyle;
     activeScenicTheme = slide.scenicTheme || "ocean";

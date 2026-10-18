@@ -775,3 +775,8 @@ body {
   display: flex;
   justify-content: flex-end;
 }
+
+.slide-bg-image {
+  opacity: 0.85 !important;
+  visibility: visible !important;
+}
