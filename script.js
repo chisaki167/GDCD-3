@@ -108,8 +108,8 @@
       ],
       scenicTheme: "night",
       bgImage: "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=1400&q=80",
-      imgUrl: "anh/7-2.jpg",
-      caption: "Bác luôn tranh thủ đọc sách và tự học dưới ánh đèn đêm muộn",
+      imgUrl: "anh/18-06-2019-yeu-sach-cua-nhan-dan-an-nam-mot-the-ky-van-ven-nguyen-gia-tri-C357B2BA-details.webp",
+      caption: "Bức ảnh Bác Hồ vừa học vừa tham gia Đại hội Tours.",
       maskStyle: "linear-gradient(90deg, #121316 0%, rgba(18,19,22,0.9) 54%, rgba(18,19,22,0.2) 100%)",
       morph: {
         line: { left: "6%", top: "88%", width: "24%", height: "3px", rotate: "0deg", opacity: 0.8 },
