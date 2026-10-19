@@ -1,16 +1,19 @@
 (function () {
   "use strict";
 
+  // Dữ liệu 20 Slide trình chiếu kết hợp ảnh minh họa cục bộ và link ảnh nền chuẩn
   var SLIDES_DATA = [
     {
       id: 1,
-      eyebrow: "CHỦ ĐỀ THUYẾT TRÌNH",
+      eyebrow: "CHỦ ĐỀ THUYẾT TRÌNH GDCD",
       title: "TẤM GƯƠNG LAO ĐỘNG CẦN CÙ CỦA BÁC HỒ",
       subtitle: "Hành trình tự lực cánh sinh trên con đường tìm đường cứu nước (1911 – 1941)",
       footerLabel: "Bài học về ý chí, nghị lực và giá trị của sức lao động",
       scenicTheme: "ocean",
       videoLabel: "TƯ LIỆU LỊCH SỬ",
       bgImage: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80",
+      imgUrl: "anh/1765164502847_csg-nam-1866.webp",
+      caption: "Bến cảng Nhà Rồng năm 1911 – Nơi khởi đầu hành trình vĩ đại",
       maskStyle: "linear-gradient(90deg, #121316 0%, rgba(18,19,22,0.75) 55%, rgba(18,19,22,0.2) 100%)",
       morph: {
         line: { left: "6%", top: "88%", width: "4%", height: "3px", rotate: "0deg", opacity: 0.7 },
@@ -24,10 +27,12 @@
       bullets: [
         { bold: "Khủng hoảng đường lối:", text: "Các phong trào yêu nước truyền thống đều rơi vào bế tắc." },
         { bold: "Trăn trở lớn:", text: "Cần tìm một con đường mới để giải phóng dân tộc." },
-        { bold: "Tầm nhìn vượt thời đại:", text: "Quyết định đi sang phương Tây để tìm hiểu thực tế." }
+        { bold: "Tầm nhìn vượt thời đại:", text: "Quyết định đi sang phương Tây để tìm hiểu thực tế đời sống." }
       ],
       scenicTheme: "mountains",
       bgImage: "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1400&q=80",
+      imgUrl: "anh/colonial-francais (1).jpg",
+      caption: "Bối cảnh Việt Nam đầu thế kỷ XX dưới ách thống trị thuộc địa",
       maskStyle: "linear-gradient(90deg, #121316 0%, rgba(18,19,22,0.9) 52%, rgba(18,19,22,0.25) 100%)",
       morph: {
         line: { left: "6%", top: "88%", width: "8%", height: "3px", rotate: "0deg", opacity: 0.7 },
@@ -46,6 +51,8 @@
       scenicTheme: "ocean",
       videoLabel: "TÀU LATOUCHE-TRÉVILLE",
       bgImage: "https://cdn10.picryl.com/photo/1918/06/07/photograph-of-the-ss-amiral-latouche-treville-496e57-1024.jpg",
+      imgUrl: "anh/istockphoto-2237105534-612x612.jpg",
+      caption: "Con tàu viễn dương đưa anh Ba rời Bến Nhà Rồng năm 1911",
       maskStyle: "linear-gradient(90deg, #121316 0%, rgba(18,19,22,0.85) 55%, rgba(18,19,22,0.2) 100%)",
       morph: {
         line: { left: "6%", top: "88%", width: "12%", height: "4px", rotate: "0deg", opacity: 0.8 },
@@ -63,6 +70,8 @@
       ],
       scenicTheme: "ocean",
       bgImage: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80",
+      imgUrl: "anh/f28549daa41841b085dfcf20af692870.jfif",
+      caption: "Hành trình lao động tự lực vượt qua mọi thử thách vượt đại dương",
       maskStyle: "radial-gradient(circle at 75% 50%, rgba(18,19,22,0.25) 0%, #121316 72%)",
       morph: {
         line: { left: "6%", top: "88%", width: "16%", height: "4px", rotate: "0deg", opacity: 0.8 },
@@ -80,6 +89,8 @@
       ],
       scenicTheme: "furnace",
       bgImage: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=80",
+      imgUrl: "anh/images.jfif",
+      caption: "Công việc phụ bếp trong không gian hầm tàu ngột ngạt và nóng bức",
       maskStyle: "linear-gradient(90deg, #121316 0%, rgba(18,19,22,0.9) 55%, rgba(217,4,41,0.28) 100%)",
       morph: {
         line: { left: "6%", top: "88%", width: "20%", height: "3px", rotate: "0deg", opacity: 0.8 },
@@ -97,6 +108,8 @@
       ],
       scenicTheme: "night",
       bgImage: "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=1400&q=80",
+      imgUrl: "anh/7-2.jpg",
+      caption: "Bác luôn tranh thủ đọc sách và tự học dưới ánh đèn đêm muộn",
       maskStyle: "linear-gradient(90deg, #121316 0%, rgba(18,19,22,0.9) 54%, rgba(18,19,22,0.2) 100%)",
       morph: {
         line: { left: "6%", top: "88%", width: "24%", height: "3px", rotate: "0deg", opacity: 0.8 },
@@ -106,7 +119,7 @@
     {
       id: 7,
       eyebrow: "HÀNH TRÌNH QUA CÁC CHÂU LỤC (1912 – 1913)",
-      title: "Bôn Ba Qua Châu Phi Và Châu Mỹ",
+      title: "BÔN BA QUA CHÂU PHI VÀ CHÂU MỸ",
       cardsCols: 3,
       cards: [
         { header: "Bến cảng Châu Phi", body: "Tận mắt chứng kiến nỗi thống khổ của người lao động thuộc địa." },
@@ -115,6 +128,8 @@
       ],
       scenicTheme: "ocean",
       bgImage: "https://images.unsplash.com/photo-1485738422979-f5c462d49f74?auto=format&fit=crop&w=1400&q=80",
+      imgUrl: "anh/hanh-trinh-bac-ho-ra-di-tim-duong-cuu-nuoc.jpg",
+      caption: "Hình ảnh nước Mỹ đầu thế kỷ XX – Nơi Bác từng dừng chân làm việc",
       maskStyle: "linear-gradient(180deg, rgba(18,19,22,0.92) 0%, rgba(18,19,22,0.75) 60%, #121316 100%)",
       morph: {
         line: { left: "6%", top: "88%", width: "28%", height: "4px", rotate: "0deg", opacity: 0.85 },
@@ -133,6 +148,8 @@
       scenicTheme: "snow",
       videoLabel: "LUÂN ĐÔN MÙA ĐÔNG",
       bgImage: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1400&q=80",
+      imgUrl: "anh/images (1).jfif",
+      caption: "Khung cảnh Luân Đôn mùa đông giá lạnh năm 1913",
       maskStyle: "linear-gradient(90deg, #121316 0%, rgba(18,19,22,0.86) 52%, rgba(18,19,22,0.2) 100%)",
       morph: {
         line: { left: "6%", top: "88%", width: "32%", height: "3px", rotate: "0deg", opacity: 0.85 },
@@ -145,11 +162,13 @@
       title: "LÀM VIỆC TẠI KHÁCH SẠN CARLTON",
       cardsCols: 2,
       cards: [
-        { header: "KỶ LUẬT LAO ĐỘNG", body: "Làm việc tỉ mỉ, sạch sẽ và nghiêm túc trong khu bếp của vua đầu bếp Escoffier." },
-        { header: "LÒNG NHÂN ÁI", body: "Giữ lại phần thức ăn dư sạch sẽ để chuyển cho người nghèo thay vì đổ bỏ." }
+        { header: "KỶ LUẬT LAO ĐỘNG", body: "Làm việc tỉ mỉ, sạch sẽ trong khu bếp của vua đầu bếp Escoffier." },
+        { header: "LÒNG NHÂN ÁI", body: "Giữ lại phần thức ăn dư sạch sẽ để chuyển cho người nghèo." }
       ],
       scenicTheme: "snow",
       bgImage: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1400&q=80",
+      imgUrl: "anh/images (3).jfif",
+      caption: "Khách sạn Carlton Luân Đôn – Nơi Bác làm thợ phụ bếp",
       maskStyle: "linear-gradient(180deg, rgba(18,19,22,0.92) 0%, rgba(18,19,22,0.78) 100%)",
       morph: {
         line: { left: "6%", top: "88%", width: "36%", height: "3px", rotate: "0deg", opacity: 0.9 },
@@ -163,11 +182,13 @@
       cardsCols: 3,
       cards: [
         { header: "01. Học mọi lúc mọi nơi", body: "Tận dụng ngày nghỉ cuối tuần và giờ nghỉ giải lao." },
-        { header: "02. Giao tiếp thực tế", body: "Đến công viên Hyde Park lắng nghe và luyện nói trước đám đông." },
+        { header: "02. Giao tiếp thực tế", body: "Đến công viên Hyde Park luyện nói trước đám đông." },
         { header: "03. Tích lũy tri thức", body: "Đọc báo chí, tài liệu bằng tiếng Anh để mở rộng tầm nhìn." }
       ],
       scenicTheme: "mountains",
       bgImage: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=1400&q=80",
+      imgUrl: "anh/images (4).jfif",
+      caption: "Công viên Hyde Park tại Luân Đôn – Nơi Bác luyện tập phát âm tiếng Anh",
       maskStyle: "linear-gradient(90deg, #121316 0%, rgba(18,19,22,0.85) 60%, rgba(18,19,22,0.3) 100%)",
       morph: {
         line: { left: "6%", top: "88%", width: "40%", height: "4px", rotate: "0deg", opacity: 0.9 },
@@ -179,12 +200,14 @@
       eyebrow: "NƯỚC PHÁP (1917 – 1923) • NGÕ COMPOINT",
       title: "NGHỀ THỢ ẢNH TẠI NGÕ HẺM PARIS",
       bullets: [
-        { bold: "Không gian chật hẹp:", text: "Sống trong căn phòng nhỏ không có lò sưởi giữa mùa đông lạnh giá." },
+        { bold: "Không gian chật hẹp:", text: "Sống trong căn phòng nhỏ không có lò sưởi giữa mùa đông." },
         { bold: "Lao động khéo léo:", text: "Làm nghề phóng ảnh, rửa ảnh và vẽ đồ mỹ nghệ để kiếm sống." },
-        { bold: "Phân bổ thời gian:", text: "Làm việc nửa ngày để mưu sinh, nửa ngày hoạt động yêu nước." }
+        { bold: "Phân bổ thời gian:", text: "Làm việc nửa ngày mưu sinh, nửa ngày hoạt động cách mạng." }
       ],
       scenicTheme: "night",
       bgImage: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1400&q=80",
+      imgUrl: "anh/images (5).jfif",
+      caption: "Căn ngõ Compoint tại thủ đô Paris, Pháp nơi Bác từng sinh sống",
       maskStyle: "linear-gradient(90deg, #121316 0%, rgba(18,19,22,0.9) 55%, rgba(18,19,22,0.22) 100%)",
       morph: {
         line: { left: "6%", top: "88%", width: "44%", height: "3px", rotate: "0deg", opacity: 0.9 },
@@ -198,11 +221,13 @@
       cardsCols: 3,
       cards: [
         { header: "Bước 01", body: "Viết từng mẩu tin ngắn chỉ vài dòng trên báo Pháp." },
-        { header: "Bước 02", body: "Kiên trì sửa chữa, đối chiếu bản thảo để nâng cao văn phong." },
+        { header: "Bước 02", body: "Kiên trì sửa chữa bản thảo để nâng cao văn phong." },
         { header: "Bước 03", body: "Sáng lập và làm chủ bút tờ báo Le Paria (Người Cùng Khổ)." }
       ],
       scenicTheme: "furnace",
       bgImage: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1400&q=80",
+      imgUrl: "anh/13-hinh-anh-bac-ho-lam-viec-inkythuatso-04-12-12-54.jpg",
+      caption: "Ngòi bút báo chí sắc bén – Vũ khí đấu tranh cách mạng của Bác",
       maskStyle: "linear-gradient(180deg, rgba(18,19,22,0.92) 0%, rgba(18,19,22,0.8) 100%)",
       morph: {
         line: { left: "6%", top: "88%", width: "48%", height: "4px", rotate: "0deg", opacity: 0.95 },
@@ -215,12 +240,14 @@
       title: "KHÔNG NGỪNG NGHỈ TRÊN ĐƯỜNG CÁCH MẠNG",
       cardsCols: 3,
       cards: [
-        { header: "Liên Xô (1923 – 1924)", body: "Nghiên cứu lý luận, viết báo và tham dự các hội nghị quốc tế." },
-        { header: "Trung Quốc (1924 – 1927)", body: "Mở lớp đào tạo cán bộ, biên soạn sách Đường Kách Mệnh." },
-        { header: "Thái Lan (1928 – 1929)", body: "Cùng lao động đào giếng, khuân gạch, làm ruộng với kiều bào." }
+        { header: "Liên Xô (1923 – 1924)", body: "Nghiên cứu lý luận, tham dự các hội nghị quốc tế." },
+        { header: "Trung Quốc (1924 – 1927)", body: "Mở lớp đào tạo cán bộ, biên soạn Đường Kách Mệnh." },
+        { header: "Thái Lan (1928 – 1929)", body: "Lao động đào giếng, khuân gạch, làm ruộng với kiều bào." }
       ],
       scenicTheme: "snow",
       bgImage: "https://images.unsplash.com/photo-1513326738677-b964603b136d?auto=format&fit=crop&w=1400&q=80",
+      imgUrl: "anh/1368930895235.webp",
+      caption: "Bác Hồ thời kỳ hoạt động cách mạng quốc tế tại Mát-scơ-va",
       maskStyle: "linear-gradient(135deg, #121316 0%, rgba(18,19,22,0.85) 65%, rgba(18,19,22,0.3) 100%)",
       morph: {
         line: { left: "6%", top: "88%", width: "52%", height: "4px", rotate: "0deg", opacity: 0.95 },
@@ -239,6 +266,8 @@
       scenicTheme: "stream",
       videoLabel: "PÁC BÓ - CAO BẰNG",
       bgImage: "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1400&q=80",
+      imgUrl: "anh/images (6).jfif",
+      caption: "Hang Pác Bó và suối Lê-nin tại Cao Bằng – Nơi Bác về nước chỉ đạo cách mạng",
       maskStyle: "linear-gradient(90deg, #121316 0%, rgba(18,19,22,0.86) 52%, rgba(18,19,22,0.18) 100%)",
       morph: {
         line: { left: "6%", top: "88%", width: "56%", height: "3px", rotate: "0deg", opacity: 0.95 },
@@ -247,27 +276,8 @@
     },
     {
       id: 15,
-      eyebrow: "NẾP SỐNG LAO ĐỘNG HÀNG NGÀY",
-      title: "TẤM GƯƠNG CẦN CÙ NƠI CHIẾN KHU",
-      cardsCols: 4,
-      cards: [
-        { header: "Lãnh đạo kháng chiến", body: "Soạn thảo tài liệu, chỉ đạo công việc từ sáng sớm đến khuya." },
-        { header: "Tăng gia sản xuất", body: "Trực tiếp cuốc đất, trồng rau, tưới cây sau giờ làm việc." },
-        { header: "Rèn luyện sức khỏe", body: "Tập thể dục, leo núi, bơi lội đều đặn mỗi ngày." },
-        { header: "Gần gũi nhân dân", body: "Cùng ăn, cùng ở, cùng làm việc với đồng bào và chiến sĩ." }
-      ],
-      scenicTheme: "stream",
-      bgImage: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=80",
-      maskStyle: "linear-gradient(180deg, rgba(18,19,22,0.9) 0%, rgba(18,19,22,0.82) 100%)",
-      morph: {
-        line: { left: "6%", top: "88%", width: "60%", height: "3px", rotate: "0deg", opacity: 0.95 },
-        pin: { left: "66%", top: "88%", label: "Việt Bắc" }
-      }
-    },
-    {
-      id: 16,
       eyebrow: "NHÌN LẠI HÀNH TRÌNH VĨ ĐẠI",
-      title: "NHỮNG CON SỐ BIẾT NÓI",
+      title: "TỔNG KẾT NHỮNG CON SỐ BIẾT NÓI",
       cardsCols: 3,
       cards: [
         { stat: "30 Năm", header: "HÀNH TRÌNH VƯỢT ĐẠI DƯƠNG", body: "Bôn ba tìm đường cứu nước qua 3 đại dương, 4 châu lục." },
@@ -276,86 +286,130 @@
       ],
       scenicTheme: "sunrise",
       bgImage: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1400&q=80",
+      imgUrl: "anh/images (7).jfif",
+      caption: "Bản đồ hành trình 30 năm bôn ba khắp các châu lục của Chủ tịch Hồ Chí Minh",
       maskStyle: "radial-gradient(circle at center, rgba(18,19,22,0.82) 0%, #121316 90%)",
       morph: {
-        line: { left: "6%", top: "88%", width: "64%", height: "5px", rotate: "0deg", opacity: 1 },
-        pin: { left: "70%", top: "88%", label: "Tổng kết số liệu" }
+        line: { left: "6%", top: "88%", width: "60%", height: "5px", rotate: "0deg", opacity: 1 },
+        pin: { left: "66%", top: "88%", label: "Tổng kết số liệu" }
+      }
+    },
+    /* 5 CÂU HỎI TRẮC NGHIỆM TƯƠNG TÁC (SLIDES 16 - 20) - KHÔNG CÓ ẢNH NỀN BACKGROUND */
+    {
+      id: 16,
+      layout: "quiz",
+      eyebrow: "CÂU HỎI ÔN TẬP 01 / 05",
+      title: "KIM CỔ KHỞI HÀNH",
+      subtitle: "Hãy chọn đáp án đúng nhất dựa trên kiến thức lịch sử đã học.",
+      question: "Câu 1: Bác Hồ rời Bến cảng Nhà Rồng ra đi tìm đường cứu nước vào ngày tháng năm nào?",
+      options: [
+        { id: "A", text: "A. 05/06/1911", correct: true },
+        { id: "B", text: "B. 19/05/1890", correct: false },
+        { id: "C", text: "C. 03/02/1930", correct: false },
+        { id: "D", text: "D. 28/01/1941", correct: false }
+      ],
+      explanation: "Rất chính xác! Ngày 05/06/1911, người thanh niên Nguyễn Tất Thành bước xuống con tàu Đô đốc Latouche-Tréville rời Bến Nhà Rồng.",
+      scenicTheme: "sunrise",
+      bgImage: "",
+      maskStyle: "none",
+      morph: {
+        line: { left: "6%", top: "88%", width: "68%", height: "4px", rotate: "0deg", opacity: 1 },
+        pin: { left: "72%", top: "88%", label: "Câu hỏi 1" }
       }
     },
     {
       id: 17,
-      layout: "split4060",
-      eyebrow: "GIÁ TRỊ CỐT LÕI",
-      title: "QUAN ĐIỂM VỀ LAO ĐỘNG",
-      bullets: [
-        { bold: "Mọi nghề đều vinh quang:", text: "Lao động chân tay hay lao động trí óc đều đáng trân trọng nếu có ích cho xã hội." },
-        { bold: "Đức tính Cần – Kiệm:", text: "Cần cù luôn phải đi đôi với tiết kiệm, có kế hoạch và sáng tạo." },
-        { bold: "Nói đi đôi với làm:", text: "Luôn nêu gương trước trong mọi công việc từ nhỏ đến lớn." }
+      layout: "quiz",
+      eyebrow: "CÂU HỎI ÔN TẬP 02 / 05",
+      title: "HÀNH TRANG TỰ LỰC",
+      subtitle: "Hãy chọn đáp án đúng nhất dựa trên kiến thức lịch sử đã học.",
+      question: "Câu 2: Tên gọi và vị trí công việc đầu tiên của Bác khi làm việc trên con tàu Pháp là gì?",
+      options: [
+        { id: "A", text: "A. Anh Ba - Phụ bếp", correct: true },
+        { id: "B", text: "B. Anh Văn - Thủy thủ", correct: false },
+        { id: "C", text: "C. Bác Lý - Thợ máy", correct: false },
+        { id: "D", text: "D. Nguyễn Ái Quốc - Đốt lò", correct: false }
       ],
-      scenicTheme: "sunrise",
-      bgImage: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1400&q=80",
-      maskStyle: "linear-gradient(90deg, rgba(18,19,22,0.2) 0%, rgba(18,19,22,0.88) 42%, #121316 100%)",
+      explanation: "Đúng rồi! Bác lấy tên là Văn Ba (Anh Ba) và đảm nhận công việc phụ bếp vất vả trên tàu.",
+      scenicTheme: "furnace",
+      bgImage: "",
+      maskStyle: "none",
       morph: {
-        line: { left: "6%", top: "88%", width: "68%", height: "3px", rotate: "0deg", opacity: 0.95 },
-        pin: { left: "74%", top: "88%", label: "Cần • Kiệm" }
+        line: { left: "6%", top: "88%", width: "72%", height: "4px", rotate: "0deg", opacity: 1 },
+        pin: { left: "76%", top: "88%", label: "Câu hỏi 2" }
       }
     },
     {
       id: 18,
-      eyebrow: "LIÊN HỆ THỰC TIỄN",
-      title: "BÀI HỌC CHO THẾ HỆ TRẺ HÔM NAY",
-      cardsCols: 3,
-      cards: [
-        { header: "01. TỰ LẬP & CHỦ ĐỘNG", body: "Không ỷ lại, sẵn sàng bắt đầu từ những công việc nhỏ nhất để rèn luyện bản thân." },
-        { header: "02. HỌC TẬP SUỐT ĐỜI", body: "Kiên trì trau dồi tri thức, ngoại ngữ và kỹ năng số trong kỷ nguyên mới." },
-        { header: "03. SỐNG CÓ LÝ TƯỞNG", body: "Gắn mục tiêu phát triển cá nhân với sự phồn vinh của đất nước." }
+      layout: "quiz",
+      eyebrow: "CÂU HỎI ÔN TẬP 03 / 05",
+      title: "NHỮNG NĂM THÁNG Ở ANH",
+      subtitle: "Hãy chọn đáp án đúng nhất dựa trên kiến thức lịch sử đã học.",
+      question: "Câu 3: Trong thời gian sống tại Luân Đôn (Anh), Bác Hồ đã làm những công việc gì để mưu sinh?",
+      options: [
+        { id: "A", text: "A. Cào tuyết cho trường học & Đốt lò sưởi", correct: true },
+        { id: "B", text: "B. Lái xe buýt hai tầng", correct: false },
+        { id: "C", text: "C. Dạy học tại trường tiểu học", correct: false },
+        { id: "D", text: "D. Sửa chữa đồng hồ", correct: false }
       ],
-      scenicTheme: "sunrise",
-      bgImage: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1400&q=80",
-      maskStyle: "linear-gradient(180deg, rgba(18,19,22,0.92) 0%, rgba(18,19,22,0.8) 100%)",
+      explanation: "Chính xác! Giữa mùa đông khắc nghiệt ở Luân Đôn, Bác làm nghề cào tuyết và quét dọn, đốt lò sưởi ngầm.",
+      scenicTheme: "snow",
+      bgImage: "",
+      maskStyle: "none",
       morph: {
-        line: { left: "6%", top: "88%", width: "72%", height: "3px", rotate: "0deg", opacity: 0.98 },
-        pin: { left: "78%", top: "88%", label: "Thế hệ trẻ" }
+        line: { left: "6%", top: "88%", width: "76%", height: "4px", rotate: "0deg", opacity: 1 },
+        pin: { left: "80%", top: "88%", label: "Câu hỏi 3" }
       }
     },
     {
       id: 19,
-      eyebrow: "HÀNH ĐỘNG CỤ THỂ",
-      title: "RÈN LUYỆN THEO GƯƠNG BÁC MỖI NGÀY",
-      cardsCols: 4,
-      cards: [
-        { header: "Trong học tập", body: "Chuyên cần trên lớp, chủ động tự học và nghiên cứu tài liệu." },
-        { header: "Trong lao động", body: "Tích cực tham gia hoạt động tình nguyện, giữ gìn vệ sinh trường lớp." },
-        { header: "Trong quản lý thời gian", body: "Làm việc có kế hoạch, quý trọng từng giờ từng phút." },
-        { header: "Trong rèn luyện ý chí", body: "Kiên trì vượt qua khó khăn, không bỏ cuộc trước thử thách." }
+      layout: "quiz",
+      eyebrow: "CÂU HỎI ÔN TẬP 04 / 05",
+      title: "NGỜI BÚT ĐẤU TRANH",
+      subtitle: "Hãy chọn đáp án đúng nhất dựa trên kiến thức lịch sử đã học.",
+      question: "Câu 4: Tờ báo nào do Bác Hồ cùng các đồng chí cách mạng thành lập tại Pháp năm 1922?",
+      options: [
+        { id: "A", text: "A. Báo Le Paria (Người Cùng Khổ)", correct: true },
+        { id: "B", text: "B. Báo Thanh Niên", correct: false },
+        { id: "C", text: "C. Báo Nhân Dân", correct: false },
+        { id: "D", text: "D. Báo Việt Nam Độc Lập", correct: false }
       ],
-      scenicTheme: "mountains",
-      bgImage: "https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=1400&q=80",
-      maskStyle: "linear-gradient(180deg, rgba(18,19,22,0.9) 0%, rgba(18,19,22,0.84) 100%)",
+      explanation: "Rất giỏi! Bác Hồ là sáng lập viên kiêm chủ bút tờ báo Le Paria (Người Cùng Khổ) vạch trần tội ác thực dân.",
+      scenicTheme: "furnace",
+      bgImage: "",
+      maskStyle: "none",
       morph: {
-        line: { left: "6%", top: "88%", width: "76%", height: "3px", rotate: "0deg", opacity: 0.98 },
-        pin: { left: "82%", top: "88%", label: "Hành động" }
+        line: { left: "6%", top: "88%", width: "80%", height: "4px", rotate: "0deg", opacity: 1 },
+        pin: { left: "84%", top: "88%", label: "Câu hỏi 4" }
       }
     },
     {
       id: 20,
-      eyebrow: "TỔNG KẾT BÀI THUYẾT TRÌNH",
-      title: "TRÂN TRỌNG CẢM ƠN CÔ VÀ CÁC BẠN ĐÃ LẮNG NGHE!",
-      subtitle: "Lao động cần cù, tự lực cánh sinh và học tập không ngừng chính là chìa khóa mở ra tương lai.",
-      footerLabel: "Rất mong nhận được câu hỏi và ý kiến đóng góp từ Cô và tập thể lớp!",
+      layout: "quiz",
+      eyebrow: "CÂU HỎI ÔN TẬP 05 / 05",
+      title: "BÀI HỌC VỀ Ý CHÍ LAO ĐỘNG",
+      subtitle: "Hãy chọn đáp án đúng nhất dựa trên kiến thức lịch sử đã học.",
+      question: "Câu 5: Trong các công việc sau, Bác Hồ CHƯA TỪNG trải qua công việc nào ở giai đoạn đầu bôn ba?",
+      options: [
+        { id: "A", text: "A. Phi công lái máy bay thương mại", correct: true },
+        { id: "B", text: "B. Thợ phụ bánh tại khách sạn", correct: false },
+        { id: "C", text: "C. Thợ rửa ảnh và vẽ đồ mỹ nghệ", correct: false },
+        { id: "D", text: "D. Phụ bếp trên tàu viễn dương", correct: false }
+      ],
+      explanation: "Chính xác! Bác Hồ chưa từng làm phi công; Bác đã trải qua rất nhiều nghề chân tay và trí óc vất vả để mưu sinh.",
       scenicTheme: "sunrise",
-      videoLabel: "BÌNH MINH NON SÔNG VIỆT NAM",
-      bgImage: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1400&q=80",
-      maskStyle: "radial-gradient(circle at center, rgba(18,19,22,0.55) 0%, #121316 88%)",
+      bgImage: "",
+      maskStyle: "none",
       morph: {
-        line: { left: "6%", top: "88%", width: "82%", height: "4px", rotate: "0deg", opacity: 1 },
-        pin: { left: "88%", top: "88%", label: "Hoàn thành" }
+        line: { left: "6%", top: "88%", width: "88%", height: "4px", rotate: "0deg", opacity: 1 },
+        pin: { left: "88%", top: "88%", label: "Hoàn thành 5/5" }
       }
     }
   ];
 
   var currentSlideIndex = 0;
   var isEndOfShow = false;
+  var isTransitioning = false;
   var activeScenicTheme = "ocean";
 
   var presentationStage = document.getElementById("presentationStage");
@@ -365,6 +419,7 @@
   var prevBtn = document.getElementById("prevBtn");
   var nextBtn = document.getElementById("nextBtn");
   var endShowOverlay = document.getElementById("endShowOverlay");
+  var laserPointerDot = document.getElementById("laserPointerDot");
 
   var thumbnailStrip = document.getElementById("thumbnailStrip");
   var slideBgImage = document.getElementById("slideBgImage");
@@ -390,14 +445,7 @@
     nextBtn.disabled = false;
   }
 
-  function renderSlide(index) {
-    if (index < 0) return;
-    if (index >= SLIDES_DATA.length) {
-      showEndOfPresentation();
-      return;
-    }
-
-    hideEndOfPresentation();
+  function renderSlideContent(index) {
     currentSlideIndex = index;
     var slide = SLIDES_DATA[currentSlideIndex];
 
@@ -407,8 +455,15 @@
 
     prevBtn.disabled = (currentSlideIndex === 0);
 
-    // Đảm bảo cập nhật chính xác ảnh nền cho từng slide (kể cả slide 1)
-    slideBgImage.style.backgroundImage = "url('" + slide.bgImage + "')";
+    // Cập nhật background chuẩn từ link ảnh hoặc ẩn đi nếu là slide câu hỏi
+    if (slide.bgImage) {
+      slideBgImage.style.backgroundImage = "url('" + slide.bgImage + "')";
+      slideBgImage.style.display = "block";
+    } else {
+      slideBgImage.style.backgroundImage = "none";
+      slideBgImage.style.display = "none";
+    }
+
     scenicGradientMask.style.background = slide.maskStyle;
     activeScenicTheme = slide.scenicTheme || "ocean";
 
@@ -425,23 +480,30 @@
 
     var html = "";
 
-    if (slide.layout === "split4060") {
+    // Xử lý giao diện trắc nghiệm (Slide 16 - 20)
+    if (slide.layout === "quiz") {
       html =
-        '<div class="split-40-60">' +
-          '<div class="split-left-red">' +
-            '<div class="eyebrow" style="background:rgba(0,0,0,0.28);color:#fff;border-color:#fff;">' + slide.eyebrow + '</div>' +
-            '<h1 class="slide-title">' + slide.title + '</h1>' +
+        '<div class="quiz-full-container">' +
+          '<div class="eyebrow"><span>' + slide.eyebrow + '</span></div>' +
+          '<h1 class="slide-title">' + slide.title + '</h1>' +
+          '<p class="slide-subtitle">' + slide.subtitle + '</p>' +
+          '<div class="quiz-question-text">' + slide.question + '</div>' +
+          '<div class="quiz-options-grid">' +
+            slide.options.map(function (opt) {
+              return (
+                '<div class="quiz-option" data-correct="' + opt.correct + '">' +
+                  '<span>' + opt.text + '</span>' +
+                  '<span class="status-icon"></span>' +
+                '</div>'
+              );
+            }).join("") +
           '</div>' +
-          '<div class="split-right-content">' +
-            '<ul class="red-bullet-list" style="max-width:100%;">' +
-              slide.bullets.map(function (b) {
-                return '<li class="red-bullet-item"><span class="bullet-square"></span><div class="bullet-text"><strong>' + b.bold + '</strong> ' + b.text + '</div></li>';
-              }).join("") +
-            '</ul>' +
-          '</div>' +
+          '<div id="quizFeedback" class="quiz-feedback" style="display:none;"></div>' +
         '</div>';
     } else {
-      html +=
+      // Giao diện Slide thông thường (Slide 1 - 15)
+      var leftContentHtml = "";
+      leftContentHtml +=
         '<div class="eyebrow">' +
           '<span>' + slide.eyebrow + '</span>' +
           (slide.videoLabel ? '<span class="video-badge">▶ ' + slide.videoLabel + '</span>' : '') +
@@ -449,25 +511,25 @@
         '<h1 class="slide-title">' + slide.title + '</h1>';
 
       if (slide.subtitle) {
-        html += '<p class="slide-subtitle">' + slide.subtitle + '</p>';
+        leftContentHtml += '<p class="slide-subtitle">' + slide.subtitle + '</p>';
       }
 
       if (slide.highlight) {
-        html +=
+        leftContentHtml +=
           '<div class="big-metric-box">' +
-            '<div class="bullet-text" style="font-size:1.12rem;font-weight:700;color:#ffccd5;">“' + slide.highlight + '”</div>' +
+            '<div class="bullet-text" style="font-size:1.05rem;font-weight:700;color:#ffccd5;">“' + slide.highlight + '”</div>' +
           '</div>';
       }
 
       if (slide.bigMetric) {
-        html +=
+        leftContentHtml +=
           '<div class="big-metric-box">' +
             '<div class="big-metric-value">' + slide.bigMetric + '</div>' +
           '</div>';
       }
 
       if (slide.bullets) {
-        html +=
+        leftContentHtml +=
           '<ul class="red-bullet-list">' +
             slide.bullets.map(function (b) {
               return '<li class="red-bullet-item"><span class="bullet-square"></span><div class="bullet-text"><strong>' + b.bold + '</strong> ' + b.text + '</div></li>';
@@ -476,7 +538,7 @@
       }
 
       if (slide.cards) {
-        html +=
+        leftContentHtml +=
           '<div class="cards-grid cols-' + (slide.cardsCols || 3) + '">' +
             slide.cards.map(function (c) {
               return (
@@ -491,11 +553,56 @@
       }
 
       if (slide.footerLabel) {
-        html += '<div class="footer-callout">★ ' + slide.footerLabel + '</div>';
+        leftContentHtml += '<div class="footer-callout">★ ' + slide.footerLabel + '</div>';
       }
+
+      var rightImageHtml =
+        '<div class="illustration-card">' +
+          '<img class="illustration-img" src="' + slide.imgUrl + '" alt="Hình minh họa" />' +
+          '<div class="illustration-caption">' + slide.caption + '</div>' +
+        '</div>';
+
+      html =
+        '<div class="slide-split-container">' +
+          '<div class="slide-left-col">' + leftContentHtml + '</div>' +
+          '<div class="slide-right-col">' + rightImageHtml + '</div>' +
+        '</div>';
     }
 
     slideContentLayer.innerHTML = html;
+
+    // Sự kiện tương tác trắc nghiệm
+    if (slide.layout === "quiz") {
+      var optionElements = slideContentLayer.querySelectorAll(".quiz-option");
+      var feedbackBox = document.getElementById("quizFeedback");
+      for (var q = 0; q < optionElements.length; q++) {
+        optionElements[q].addEventListener("click", function () {
+          var isCorrect = this.getAttribute("data-correct") === "true";
+          var iconSpan = this.querySelector(".status-icon");
+
+          for (var k = 0; k < optionElements.length; k++) {
+            optionElements[k].classList.remove("correct", "incorrect");
+            optionElements[k].querySelector(".status-icon").textContent = "";
+          }
+
+          if (isCorrect) {
+            this.classList.add("correct");
+            iconSpan.textContent = "✓";
+            feedbackBox.style.display = "block";
+            feedbackBox.style.borderColor = "#10b981";
+            feedbackBox.style.color = "#6ee7b7";
+            feedbackBox.innerHTML = "✔ " + slide.explanation;
+          } else {
+            this.classList.add("incorrect");
+            iconSpan.textContent = "✕";
+            feedbackBox.style.display = "block";
+            feedbackBox.style.borderColor = "#ef4444";
+            feedbackBox.style.color = "#fca5a5";
+            feedbackBox.innerHTML = "✖ Chưa chính xác. Hãy suy nghĩ lại câu hỏi và thử lại!";
+          }
+        });
+      }
+    }
 
     var thumbs = document.querySelectorAll(".thumb-item");
     for (var i = 0; i < thumbs.length; i++) {
@@ -506,6 +613,29 @@
         thumbs[i].classList.remove("active");
       }
     }
+  }
+
+  // Hiệu ứng chuyển slide: Trang cũ trôi xuống dưới -> Trang mới trôi từ dưới lên
+  function renderSlide(targetIndex) {
+    if (targetIndex < 0) return;
+    if (targetIndex >= SLIDES_DATA.length) {
+      showEndOfPresentation();
+      return;
+    }
+
+    hideEndOfPresentation();
+
+    if (isTransitioning) return;
+    isTransitioning = true;
+
+    slideContentLayer.classList.add("slide-exit");
+
+    setTimeout(function () {
+      slideContentLayer.classList.remove("slide-exit");
+      renderSlideContent(targetIndex);
+
+      isTransitioning = false;
+    }, 280);
   }
 
   function goNext() {
@@ -543,6 +673,22 @@
     }
   }
 
+  presentationStage.addEventListener("mouseenter", function () {
+    presentationStage.classList.add("laser-active");
+  });
+
+  presentationStage.addEventListener("mouseleave", function () {
+    presentationStage.classList.remove("laser-active");
+  });
+
+  presentationStage.addEventListener("mousemove", function (e) {
+    var rect = presentationStage.getBoundingClientRect();
+    var x = e.clientX - rect.left;
+    var y = e.clientY - rect.top;
+    laserPointerDot.style.left = x + "px";
+    laserPointerDot.style.top = y + "px";
+  });
+
   var particles = [];
   for (var pIdx = 0; pIdx < 70; pIdx++) {
     particles.push({
@@ -562,7 +708,7 @@
     tick += 0.02;
 
     var bgGlow = ctx.createRadialGradient(960, 320, 40, 960, 320, 620);
-    bgGlow.addColorStop(0, "rgba(217, 4, 41, 0.22)");
+    bgGlow.addColorStop(0, "rgba(217, 4, 41, 0.2)");
     bgGlow.addColorStop(1, "rgba(18, 19, 22, 0)");
     ctx.fillStyle = bgGlow;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -580,7 +726,7 @@
         ctx.fill();
       }
     } else if (activeScenicTheme === "snow") {
-      ctx.fillStyle = "rgba(255, 255, 255, 0.78)";
+      ctx.fillStyle = "rgba(255, 255, 255, 0.75)";
       for (var j = 0; j < particles.length; j++) {
         var p = particles[j];
         ctx.beginPath();
@@ -593,23 +739,6 @@
           p.x = Math.random() * canvas.width;
         }
       }
-    } else if (activeScenicTheme === "stream" || activeScenicTheme === "mountains") {
-      ctx.beginPath();
-      ctx.moveTo(450, canvas.height);
-      ctx.lineTo(720, 290);
-      ctx.lineTo(980, 490);
-      ctx.lineTo(1160, 240);
-      ctx.lineTo(1280, 420);
-      ctx.lineTo(1280, canvas.height);
-      ctx.fillStyle = "rgba(217, 4, 41, 0.12)";
-      ctx.fill();
-    } else if (activeScenicTheme === "sunrise" || activeScenicTheme === "furnace") {
-      var sun = ctx.createRadialGradient(980, 240, 15, 980, 240, 460);
-      sun.addColorStop(0, "rgba(217, 4, 41, 0.35)");
-      sun.addColorStop(0.5, "rgba(251, 191, 36, 0.14)");
-      sun.addColorStop(1, "rgba(18, 19, 22, 0)");
-      ctx.fillStyle = sun;
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
     }
 
     requestAnimationFrame(drawScenicCanvas);
@@ -661,7 +790,7 @@
 
   presentationStage.addEventListener("click", function (e) {
     if (document.fullscreenElement === presentationStage || document.webkitFullscreenElement === presentationStage) {
-      if (!isEndOfShow && !e.target.closest(".ppt-laser-controls") && !e.target.closest(".end-show-box")) {
+      if (!isEndOfShow && !e.target.closest(".ppt-laser-controls") && !e.target.closest(".end-show-box") && !e.target.closest(".quiz-option")) {
         goNext();
       }
     }
@@ -680,57 +809,7 @@
     }
   });
 
-  document.getElementById("exportPptxBtn").addEventListener("click", function () {
-    if (typeof PptxGenJS === "undefined") {
-      alert("Không thể tải thư viện PptxGenJS khi mất kết nối mạng.");
-      return;
-    }
-    var pptx = new PptxGenJS();
-    pptx.layout = "LAYOUT_16x9";
-
-    SLIDES_DATA.forEach(function (s) {
-      var slide = pptx.addSlide();
-      slide.background = { color: "121316" };
-
-      slide.addText(s.eyebrow, {
-        x: 0.75, y: 0.55, w: 8.5, h: 0.35,
-        fontSize: 11, bold: true, color: "D90429"
-      });
-
-      slide.addText(s.title, {
-        x: 0.75, y: 0.95, w: 8.5, h: 0.95,
-        fontSize: 24, bold: true, color: "FFFFFF"
-      });
-    });
-
-    pptx.writeFile({ fileName: "Tam_Guong_Lao_Dong_Bac_Ho_20Slides.pptx" });
-  });
-
-  var vbaModal = document.getElementById("vbaModal");
-  var vbaCodeArea = document.getElementById("vbaCodeArea");
-
-  document.getElementById("vbaBtn").addEventListener("click", function () {
-    vbaCodeArea.value =
-      "Sub EnableMorphAll20Slides()\n" +
-      "  Dim sld As Slide\n" +
-      "  For Each sld In ActivePresentation.Slides\n" +
-      "    sld.SlideShowTransition.EntryEffect = ppEffectMorph\n" +
-      "    sld.SlideShowTransition.Duration = 1.25\n" +
-      "  Next sld\n" +
-      "End Sub";
-    vbaModal.classList.remove("hidden");
-  });
-
-  document.getElementById("closeModalBtn").addEventListener("click", function () {
-    vbaModal.classList.add("hidden");
-  });
-
-  document.getElementById("copyVbaBtn").addEventListener("click", function () {
-    vbaCodeArea.select();
-    navigator.clipboard.writeText(vbaCodeArea.value);
-  });
-
   initThumbnails();
-  renderSlide(0);
+  renderSlideContent(0);
   drawScenicCanvas();
 })();
