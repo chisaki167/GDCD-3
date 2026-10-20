@@ -1,7 +1,6 @@
 (function () {
   "use strict";
 
-  // Dữ liệu 20 Slide trình chiếu kết hợp ảnh minh họa cục bộ và link ảnh nền chuẩn
   var SLIDES_DATA = [
     {
       id: 1,
@@ -294,7 +293,7 @@
         pin: { left: "66%", top: "88%", label: "Tổng kết số liệu" }
       }
     },
-    /* 5 CÂU HỎI TRẮC NGHIỆM TƯƠNG TÁC (SLIDES 16 - 20) */
+    /* 5 CÂU HỎI TRẮC NGHIỆM TƯƠNG TÁC (SLIDES 16 - 20) - Chỉ xáo trộn nội dung, giữ nguyên nhãn A, B, C, D cố định tại 4 ô */
     {
       id: 16,
       layout: "quiz",
@@ -303,10 +302,10 @@
       subtitle: "Hãy chọn đáp án đúng nhất dựa trên kiến thức lịch sử đã học.",
       question: "Câu 1: Bác Hồ rời Bến cảng Nhà Rồng ra đi tìm đường cứu nước vào ngày tháng năm nào?",
       options: [
-        { id: "A", text: "A. 05/06/1911", correct: true },
-        { id: "B", text: "B. 19/05/1890", correct: false },
-        { id: "C", text: "C. 03/02/1930", correct: false },
-        { id: "D", text: "D. 28/01/1941", correct: false }
+        { text: "05/06/1911", correct: true },
+        { text: "19/05/1890", correct: false },
+        { text: "03/02/1930", correct: false },
+        { text: "28/01/1941", correct: false }
       ],
       explanation: "Rất chính xác! Ngày 05/06/1911, người thanh niên Nguyễn Tất Thành bước xuống con tàu Đô đốc Latouche-Tréville rời Bến Nhà Rồng.",
       scenicTheme: "sunrise",
@@ -325,10 +324,10 @@
       subtitle: "Hãy chọn đáp án đúng nhất dựa trên kiến thức lịch sử đã học.",
       question: "Câu 2: Tên gọi và vị trí công việc đầu tiên của Bác khi làm việc trên con tàu Pháp là gì?",
       options: [
-        { id: "A", text: "A. Anh Ba - Phụ bếp", correct: true },
-        { id: "B", text: "B. Anh Văn - Thủy thủ", correct: false },
-        { id: "C", text: "C. Bác Lý - Thợ máy", correct: false },
-        { id: "D", text: "D. Nguyễn Ái Quốc - Đốt lò", correct: false }
+        { text: "Anh Ba - Phụ bếp", correct: true },
+        { text: "Anh Văn - Thủy thủ", correct: false },
+        { text: "Bác Lý - Thợ máy", correct: false },
+        { text: "Nguyễn Ái Quốc - Đốt lò", correct: false }
       ],
       explanation: "Đúng rồi! Bác lấy tên là Văn Ba (Anh Ba) và đảm nhận công việc phụ bếp vất vả trên tàu.",
       scenicTheme: "furnace",
@@ -347,10 +346,10 @@
       subtitle: "Hãy chọn đáp án đúng nhất dựa trên kiến thức lịch sử đã học.",
       question: "Câu 3: Trong thời gian sống tại Luân Đôn (Anh), Bác Hồ đã làm những công việc gì để mưu sinh?",
       options: [
-        { id: "A", text: "A. Cào tuyết cho trường học & Đốt lò sưởi", correct: true },
-        { id: "B", text: "B. Lái xe buýt hai tầng", correct: false },
-        { id: "C", text: "C. Dạy học tại trường tiểu học", correct: false },
-        { id: "D", text: "D. Sửa chữa đồng hồ", correct: false }
+        { text: "Cào tuyết cho trường học & Đốt lò sưởi", correct: true },
+        { text: "Lái xe buýt hai tầng", correct: false },
+        { text: "Dạy học tại trường tiểu học", correct: false },
+        { text: "Sửa chữa đồng hồ", correct: false }
       ],
       explanation: "Chính xác! Giữa mùa đông khắc nghiệt ở Luân Đôn, Bác làm nghề cào tuyết và quét dọn, đốt lò sưởi ngầm.",
       scenicTheme: "snow",
@@ -369,10 +368,10 @@
       subtitle: "Hãy chọn đáp án đúng nhất dựa trên kiến thức lịch sử đã học.",
       question: "Câu 4: Tờ báo nào do Bác Hồ cùng các đồng chí cách mạng thành lập tại Pháp năm 1922?",
       options: [
-        { id: "A", text: "A. Báo Le Paria (Người Cùng Khổ)", correct: true },
-        { id: "B", text: "B. Báo Thanh Niên", correct: false },
-        { id: "C", text: "C. Báo Nhân Dân", correct: false },
-        { id: "D", text: "D. Báo Việt Nam Độc Lập", correct: false }
+        { text: "Báo Le Paria (Người Cùng Khổ)", correct: true },
+        { text: "Báo Thanh Niên", correct: false },
+        { text: "Báo Nhân Dân", correct: false },
+        { text: "Báo Việt Nam Độc Lập", correct: false }
       ],
       explanation: "Rất giỏi! Bác Hồ là sáng lập viên kiêm chủ bút tờ báo Le Paria (Người Cùng Khổ) vạch trần tội ác thực dân.",
       scenicTheme: "furnace",
@@ -391,10 +390,10 @@
       subtitle: "Hãy chọn đáp án đúng nhất dựa trên kiến thức lịch sử đã học.",
       question: "Câu 5: Trong các công việc sau, Bác Hồ CHƯA TỪNG trải qua công việc nào ở giai đoạn đầu bôn ba?",
       options: [
-        { id: "A", text: "A. Phi công lái máy bay thương mại", correct: true },
-        { id: "B", text: "B. Thợ phụ bánh tại khách sạn", correct: false },
-        { id: "C", text: "C. Thợ rửa ảnh và vẽ đồ mỹ nghệ", correct: false },
-        { id: "D", text: "D. Phụ bếp trên tàu viễn dương", correct: false }
+        { text: "Phi công lái máy bay thương mại", correct: true },
+        { text: "Thợ phụ bánh tại khách sạn", correct: false },
+        { text: "Thợ rửa ảnh và vẽ đồ mỹ nghệ", correct: false },
+        { text: "Phụ bếp trên tàu viễn dương", correct: false }
       ],
       explanation: "Chính xác! Bác Hồ chưa từng làm phi công; Bác đã trải qua rất nhiều nghề chân tay và trí óc vất vả để mưu sinh.",
       scenicTheme: "sunrise",
@@ -431,7 +430,6 @@
   var canvas = document.getElementById("videoEffectCanvas");
   var ctx = canvas.getContext("2d");
 
-  // Hàm xáo trộn mảng ngẫu nhiên (Fisher-Yates shuffle)
   function shuffleArray(array) {
     var currentIndex = array.length, randomIndex, temporaryValue;
     while (currentIndex !== 0) {
@@ -444,7 +442,6 @@
     return array;
   }
 
-  // Lưu trữ bản sao các đáp án đã xáo trộn cho từng slide quiz để vị trí không bị thay đổi liên tục khi người dùng click lại slide đó
   var shuffledQuizOptions = {};
 
   function showEndOfPresentation() {
@@ -495,13 +492,12 @@
 
     var html = "";
 
-    // Xử lý giao diện trắc nghiệm (Slide 16 - 20) với tính năng xáo trộn đáp án
     if (slide.layout === "quiz") {
-      // Nếu slide này chưa được xáo trộn, thực hiện xáo trộn và lưu lại
       if (!shuffledQuizOptions[slide.id]) {
         shuffledQuizOptions[slide.id] = shuffleArray(slide.options.slice());
       }
       var currentOptions = shuffledQuizOptions[slide.id];
+      var slotLabels = ["A", "B", "C", "D"];
 
       html =
         '<div class="quiz-full-container">' +
@@ -510,10 +506,11 @@
           '<p class="slide-subtitle">' + slide.subtitle + '</p>' +
           '<div class="quiz-question-text">' + slide.question + '</div>' +
           '<div class="quiz-options-grid">' +
-            currentOptions.map(function (opt) {
+            currentOptions.map(function (opt, idx) {
+              var label = slotLabels[idx];
               return (
                 '<div class="quiz-option" data-correct="' + opt.correct + '">' +
-                  '<span>' + opt.text + '</span>' +
+                  '<span>' + label + '. ' + opt.text + '</span>' +
                   '<span class="status-icon"></span>' +
                 '</div>'
               );
@@ -522,7 +519,6 @@
           '<div id="quizFeedback" class="quiz-feedback" style="display:none;"></div>' +
         '</div>';
     } else {
-      // Giao diện Slide thông thường (Slide 1 - 15)
       var leftContentHtml = "";
       leftContentHtml +=
         '<div class="eyebrow">' +
@@ -592,7 +588,6 @@
 
     slideContentLayer.innerHTML = html;
 
-    // Sự kiện tương tác trắc nghiệm
     if (slide.layout === "quiz") {
       var optionElements = slideContentLayer.querySelectorAll(".quiz-option");
       var feedbackBox = document.getElementById("quizFeedback");
