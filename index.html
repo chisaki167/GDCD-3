@@ -1,54 +1,130 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Giáo dục công dân tổ 3</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giáo dục công dân tổ 3</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Thư viện xuất PowerPoint (.pptx) -->
+  <script src="https://cdn.jsdelivr.net/npm/pptxgenjs@3.12.0/dist/pptxgen.bundle.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header class="app-toolbar">
-<div class="brand"><span class="brand-dot"></span><span class="brand-title">BÀI THUYẾT TRÌNH GDCD • 20 SLIDES</span></div>
-<div class="toolbar-controls">
-<button id="prevBtn" class="btn btn-outline" type="button">&#8592; Trước</button>
-<span id="slideCounter" class="slide-counter">01 / 20</span>
-<button id="nextBtn" class="btn btn-outline" type="button">Tiếp &#8594;</button>
-<div class="divider"></div>
-<button id="fullscreenBtn" class="btn btn-slideshow" type="button">▶ Trình chiếu</button>
-</div>
-</header>
-<main class="stage-wrapper">
-<div id="presentationStage" class="slide-stage">
-<div id="MorphMediaFrame" class="morph-media-frame">
-<div id="slideBgImage" class="slide-bg-image"></div>
-<canvas id="videoEffectCanvas" class="video-effect-canvas"></canvas>
-<div id="scenicGradientMask" class="scenic-gradient-mask"></div>
-</div>
-<div id="MorphRedTimelineLine" class="morph-timeline-line"></div>
-<div id="MorphRedFocusPin" class="morph-focus-pin">
-<span class="pin-core"></span><span class="pin-pulse"></span><span id="pinLabel" class="pin-label">1911 • Khởi hành</span>
-</div>
-<section id="slideContentLayer" class="slide-content-layer"></section>
-<div id="laserPointerDot" class="laser-pointer-dot"></div>
-<div class="ppt-laser-controls">
-<button id="fsPrevBtn" type="button">&#10094;</button><span id="fsSlideIndicator">01 / 20</span>
-<button id="fsNextBtn" type="button">&#10095;</button><button id="fsExitBtn" type="button">✕ Thoát</button>
-</div>
-<div class="morph-hud"><span class="hud-tag">Morph Presentation</span></div>
-<div id="endShowOverlay" class="end-show-overlay hidden">
-<div class="end-show-box">
-<div class="end-badge">HOÀN THÀNH 20 SLIDE</div>
-<h2 class="end-title">KẾT THÚC BÀI THUYẾT TRÌNH</h2>
-<p class="end-desc">Cảm ơn Cô và các bạn đã lắng nghe!</p>
-<div class="end-actions">
-<button id="backToSlide20Btn" class="btn btn-outline" type="button">Quay lại Slide 20</button>
-<button id="restartShowBtn" class="btn btn-primary" type="button">Xem lại từ đầu</button>
-<button id="exitEndShowBtn" class="btn btn-secondary" type="button">Thoát</button>
-</div>
-</div>
-</div>
-</div>
-</main>
-<footer class="thumbnail-strip" id="thumbnailStrip"></footer>
-<script src="script.js"></script>
+
+  <!-- Thanh công cụ trên cùng -->
+  <header class="app-toolbar">
+    <div class="brand">
+      <span class="brand-dot"></span>
+      <span class="brand-title">BÀI THUYẾT TRÌNH GDCD • 20 SLIDES MORPH PRESENTATION</span>
+    </div>
+
+    <div class="toolbar-controls">
+      <button id="prevBtn" class="btn btn-outline" type="button">&#8592; Trước</button>
+      <span id="slideCounter" class="slide-counter">01 / 20</span>
+      <button id="nextBtn" class="btn btn-outline" type="button">Tiếp &#8594;</button>
+
+      <div class="divider"></div>
+
+      <button id="fullscreenBtn" class="btn btn-slideshow" type="button" title="Trình chiếu toàn màn hình (Phím F)">
+        ▶ Bắt đầu trình chiếu
+      </button>
+
+      <button id="vbaBtn" class="btn btn-secondary" type="button">⚡ Mã VBA Morph</button>
+      
+    </div>
+  </header>
+
+  <!-- Khung trình chiếu 16:9 -->
+  <main class="stage-wrapper">
+    <div id="presentationStage" class="slide-stage">
+      
+      <!-- Nền ảnh & Hiệu ứng -->
+      <div id="MorphMediaFrame" class="morph-media-frame">
+        <div id="slideBgImage" class="slide-bg-image"></div>
+        <canvas id="videoEffectCanvas" class="video-effect-canvas"></canvas>
+        <div id="scenicGradientMask" class="scenic-gradient-mask"></div>
+      </div>
+
+      <!-- Thanh Timeline dưới -->
+      <div id="MorphRedTimelineLine" class="morph-timeline-line"></div>
+
+      <!-- Huy hiệu Focus Pin -->
+      <div id="MorphRedFocusPin" class="morph-focus-pin">
+        <span class="pin-core"></span>
+        <span class="pin-pulse"></span>
+        <span id="pinLabel" class="pin-label">1911 • Khởi hành</span>
+      </div>
+
+      <!-- Lớp nội dung 2 cột (Left Text / Right Image) -->
+      <section id="slideContentLayer" class="slide-content-layer"></section>
+
+      <!-- Bút Laser Red Dot -->
+      <div id="laserPointerDot" class="laser-pointer-dot"></div>
+
+      <!-- Điều khiển khi trình chiếu toàn màn hình -->
+      <div class="ppt-laser-controls">
+        <button id="fsPrevBtn" type="button" title="Slide trước">&#10094;</button>
+        <span id="fsSlideIndicator">01 / 20</span>
+        <button id="fsNextBtn" type="button" title="Slide tiếp">&#10095;</button>
+        <button id="fsExitBtn" type="button" title="Thoát trình chiếu (ESC)">✕ Thoát</button>
+      </div>
+
+      <!-- Nhãn trạng thái -->
+      <div class="morph-hud">
+        <span class="hud-tag">Transition: <strong>Morph (0.85s)</strong></span>
+        <span class="hud-tag">Layout: <strong>Split View & Glassmorphism</strong></span>
+      </div>
+
+      <!-- Màn hình kết thúc -->
+      <div id="endShowOverlay" class="end-show-overlay hidden">
+        <div class="end-show-box">
+          <div class="end-badge">HOÀN THÀNH 20 / 20 SLIDE & 5 CÂU HỎI</div>
+          <h2 class="end-title">KẾT THÚC BÀI THUYẾT TRÌNH</h2>
+          <p class="end-desc">
+            Cảm ơn Cô và các bạn đã lắng nghe và tham gia trả lời các câu hỏi ôn tập về tấm gương lao động của Bác Hồ!
+          </p>
+          <div class="end-actions">
+            <button id="backToSlide20Btn" class="btn btn-outline" type="button">&#8592; Quay lại Slide 20</button>
+            <button id="restartShowBtn" class="btn btn-primary" type="button">↺ Xem lại từ Slide 01</button>
+            <button id="exitEndShowBtn" class="btn btn-secondary" type="button">✕ Thoát trình chiếu</button>
+          </div>
+          <span class="end-hint">Mẹo: Nhấn phím <kbd>←</kbd> để xem lại câu hỏi hoặc <kbd>ESC</kbd> để thoát</span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Thanh chọn nhanh 20 Slide -->
+  <footer class="thumbnail-strip" id="thumbnailStrip"></footer>
+
+  <!-- Modal VBA Code -->
+  <div id="vbaModal" class="modal-backdrop hidden">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>Mã VBA PowerPoint Tự Động Kích Hoạt Morph Cho 20 Slide</h3>
+        <button id="closeModalBtn" class="btn-close" type="button">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-steps">
+          1. Mở PowerPoint &rarr; Nhấn <kbd>Alt + F11</kbd> để mở VBA Editor.<br/>
+          2. Chọn <strong>Insert &rarr; Module</strong>, dán mã bên dưới và nhấn <kbd>F5</kbd>.
+        </p>
+        <textarea id="vbaCodeArea" readonly></textarea>
+      </div>
+      <div class="modal-footer">
+        <button id="copyVbaBtn" class="btn btn-primary" type="button">📋 Sao chép mã VBA</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
